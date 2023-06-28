@@ -1,0 +1,33 @@
+.notification {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slide-in 1s ease-out, fade-out 1s 29s;
+    z-index: 9999;
+    color: black;
+    border-radius: 10px;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(-50%, -200%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
